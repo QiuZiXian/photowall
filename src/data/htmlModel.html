@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        #imgTitle{width: 880px;height: 440px;margin: 50px auto;perspective: 880px;}
+        #imgTitle img{width: 880px;height: 440px}
+        #imgwrap{width: 880px;height: 440px;margin: 50px auto;perspective: 880px;}
+        #imgwrap img{width:220px;height:220px;float: left;}
+        #btn{width: 100px;text-align: center;font: 16px/40px "微软雅黑";color: white;padding: 0 20px;
+            margin:0 auto;border-radius:5px;background: rgb(0,100,0);box-shadow: 2px 2px 5px rgba(0,0,0,0.5);cursor: pointer;}
+        /*box-shadow(阴影): 2px(x) 2px(y) 5px(大小) rgba(0,0,0,0.5);*/
+    </style>
+
+</head>
+<body>
+<div id="imgTitle">
+    <img src="srcImg/1.jpg" alt="" />
+    <h2>瀑布流 照片墙</h2>
+</div>
+<ul data-1 class="func-bar">
+    <li data-1 datatype="bar" data-icon-type = "分类">
+        ::before
+        <ul data-1 class="option" data-hide="true">
+            <li data-1 data-selected = "true">全部</li>
+            <li data-1>活动现场</li>
+        </ul>
+        ::after
+    </li>
+    <li data-1 datatype="bar" data-icon-type = "排序">
+        ::before
+        <ul data-1 class="option" data-hide="true">
+            <li data-1 data-selected = "true">最新</li>
+            <li data-1>人气</li>
+        </ul>
+        ::after
+    </li>
+    <li data-1 datatype="bar" data-icon-type = "拼图">
+        ::before
+        <ul data-1 class="option" data-hide="true">
+            <li data-1 data-selected = "true">全部</li>
+            <li data-1>活动现场</li>
+        </ul>
+        ::after
+    </li>
+</ul>
+<div id="imgwrap">
+    %s
+</div>
+<div id="btn">
+    点击查看效果
+</div>
+</body>
+</html>
